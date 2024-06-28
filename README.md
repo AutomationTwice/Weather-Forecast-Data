@@ -28,6 +28,7 @@ This project fetches weather data from the OpenWeatherMap API for specified citi
 ```
 pip install -r requirements.txt
 ```
+
 4. Setup Docker Compose
    Create a 'docker-compose.yml' file with the following content:
    
@@ -85,6 +86,7 @@ Update the db_config dictionary in weather_data.py with your database credential
 This script will fetch weather data for the specified cities and store it in the PostgreSQL database. It will also print a success message for each inserted record.
 
 ## Viewing the Data
+
 1. Access Adminer
 
 Open your web browser and go to http://localhost:8080.
