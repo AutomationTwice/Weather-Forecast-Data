@@ -24,11 +24,10 @@ This project fetches weather data from the OpenWeatherMap API for specified citi
   python -m venv env
   source env/bin/activate  # On Windows, use `env\Scripts\activate`
 ```
-3.Install Python Dependencies
+3. Install Python Dependencies
 ```
 pip install -r requirements.txt
 ```
-
 4. Setup Docker Compose
    Create a 'docker-compose.yml' file with the following content:
    
