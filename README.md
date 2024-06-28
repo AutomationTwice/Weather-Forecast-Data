@@ -111,7 +111,7 @@ cities = ['Varanasi', 'New York', 'London']
 
 ```
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
 - OpenWeatherMap for providing the weather data API.
