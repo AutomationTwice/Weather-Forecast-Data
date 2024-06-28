@@ -5,11 +5,11 @@ from datetime import datetime
 import pytz
 
 db_config = {
-    'user': 'user',
-    'password': 'password',
+    'user': 'username',
+    'password': 'your_password',
     'host': 'localhost',
     'port': '5432',
-    'database': 'weather_db'
+    'database': 'database_name'
 }
 
 # SQLAlchemy setup
@@ -18,7 +18,7 @@ Base = declarative_base()
 
 # Define ORM class for weather data
 class WeatherData(Base):
-    __tablename__ = 'weather_data'
+    __tablename__ = 'Table_name'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     datetime = Column(DateTime, nullable=False)  # Combined date and time column
@@ -34,7 +34,7 @@ Base.metadata.create_all(engine)
 
 # Function to fetch weather data for a city from OpenWeatherMap API
 def fetch_weather_data(city):
-    api_key = '2494cbcd613fc921b3a5a53567e7a983'
+    api_key = 'your_api_key'
     url = f'http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={api_key}&units=metric'
     response = requests.get(url)
     data = response.json()
@@ -77,7 +77,7 @@ def fetch_entire_day_data(cities):
         fetch_weather_data(city)
 
 # Example cities to fetch data for
-cities = ['Varanasi']
+cities = ['City Name']
 
 # Fetch entire day's data for the specified cities
 fetch_entire_day_data(cities)
