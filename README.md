@@ -16,6 +16,8 @@ This project fetches weather data from the OpenWeatherMap API for specified citi
 
 1. **Clone the Repository**
    ```
+   https://github.com/AutomationTwice/Weather-Forecast-Data.git
+   ```
 
 2. Create a Python Virtual Environment
   ```
@@ -80,7 +82,7 @@ Update the db_config dictionary in weather_data.py with your database credential
    ```
    python weather_data.py
    ```
-   This script will fetch weather data for the specified cities and store it in the PostgreSQL database. It will also print a success message for each inserted record.
+This script will fetch weather data for the specified cities and store it in the PostgreSQL database. It will also print a success message for each inserted record.
 
 ## Viewing the Data
 1. Access Adminer
