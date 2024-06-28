@@ -2,9 +2,9 @@ services:
   postgres:
     image: postgres:latest
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: weather_db
+      POSTGRES_USER: your_username
+      POSTGRES_PASSWORD: your_password
+      POSTGRES_DB: database_name
     volumes:
       - weather_data:/var/lib/postgresql/data
     ports:
