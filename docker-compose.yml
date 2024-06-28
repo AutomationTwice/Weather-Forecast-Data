@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: weather_db
+    volumes:
+      - weather_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - weather_network
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - weather_network
+
+volumes:
+  weather_data:
+
+networks:
+  weather_network:
+    driver: bridge
