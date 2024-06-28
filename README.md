@@ -105,7 +105,7 @@ Database: database_name
 You can now view and manage your weather data in Adminer.
 
 ## Example Cities
-The script fetches weather data for the city of Varanasi by default. You can add more cities to the cities list in weather_data.py.
+You can add more cities to the cities list in weather_data.py.
 ```
 cities = ['New York', 'London', 'Paris', 'Tokyo']
 
